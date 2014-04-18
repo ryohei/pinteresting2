@@ -12,10 +12,10 @@ $jumbotron-bg:                                         white;
 @import 'bootstrap';
 
 
+
 .center {
      text-align: center;
 }
-
 
 .jumbotron{
 	margin-top: 90px;
@@ -23,4 +23,5 @@ $jumbotron-bg:                                         white;
 
 .navbar-brand {
      font-weight: bold;
+     font-size: 24px;
 }
