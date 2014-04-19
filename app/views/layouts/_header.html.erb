@@ -8,7 +8,7 @@
 	      <span class="icon-bar"></span>
 	      <span class="icon-bar"></span>
 	    </button>
-	    <a class="navbar-brand" href="#">株式会社iDEAKITT</a>
+	    <a class="navbar-brand" href= "#" >株式会社iDEAKITT</a> 
 	  </div>
 
 	  <!-- Collect the nav links, forms, and other content for toggling -->
@@ -17,6 +17,12 @@
 	      <li><%= link_to "Home", root_path %></li>
 	      <li><%= link_to "About", about_path %></li> 
 	      <li><%= link_to "Test", test_path %></li>
+
+	      <% if user_signed_in? %>
+	      	<li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+	      <% else %>
+	      	<li><%= link_to "Signin", new_user_session_path %></li>
+	      <% end %>
 	    </ul>
 	  </div><!-- /.navbar-collapse -->
 	</div>
